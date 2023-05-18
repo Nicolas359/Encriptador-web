@@ -8,22 +8,65 @@ body *{
     font-family: 'Inter', sans-serif;
 }
 
-textarea{
-    width: 780px;
+main{
+    width:120vh;
+    margin: 0 auto;
     height: 500px;
-    margin: 8% 300px 0;
-    padding: 20px;
-    display:block;
+}
+
+.text-box{
+    width: 75%;
+    display:inline-block;
+}
+
+.text-container{
+    display: inline-block; 
+    width: 90%;
+    height: 450px;
     border-color: transparent;
     border-radius: 20px;
+    padding: 20px;
     background-color: white;
     outline:none;
     resize: none;
     font-size: 18px;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.199);
+}
+.container-padre{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 10%;
+    position: relative;
+}
+
+.container-text p:first-child{
+    width: 50%;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 65px;
+    font-size: 15px;
+}
+
+.img-munheco{
+    width: 168px;
+    height: 152px;
+    margin-top: 60%;
+}
+
+.result-box {
+    display:flex;
+    flex-direction: column;
+    width: 25%;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.199);
 }
 
 .advertencia{
-    margin-left: 300px;
     font-size: 14px;
     padding: 5px 0;
 }
@@ -42,12 +85,13 @@ textarea{
 input {
     width: 20%;
     padding: 15px;
-    font-size: 15px;
+    font-size: 14px;
     color:white;
-    border:transparent;
+    border-color: transparent;
+    border-style: double;
     border-radius: 20px;
-    transition:1s all;
     cursor: pointer;
+    
 }
 
 .boton-encriptar {
@@ -57,5 +101,7 @@ input {
 
 .boton-desencriptar {
     color:black;
+    background: #D8DFE8;
+    border-color: #0A3871;
     margin-left: 20px;
 }
