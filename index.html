@@ -5,8 +5,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Encriptador de Texto</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="Website Icon" type="png" href="images/lock.png">
+        
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,30 +17,34 @@
 
     <body>
         <main>
-            <div class="container-padre">
-                <div class="text-box">
-                    <textarea placeholder="Inserte su texto aquí" class="text-container"></textarea>
-                </div>
-                <div class="result-box">
-                    <div class="container-image"> 
-                        <img src="imagenes/Muñeco.png" alt="Imagen du muñeco" class="img-munheco">
+            <section>
+                <div class="container-padre">
+                    <div class="text-box">
+                        <textarea placeholder="Inserte su texto aquí" class="input-container"></textarea>
                     </div>
-                    <div class="container-text"> 
-                        <p>Ningún mensaje fue encontrado</p>
-                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <div class="result-box">
+                        <div class="container-image"> 
+                            <img src="images/Muñeco.png" alt="Imagen du muñeco" class="img-munheco">
+                        </div>
+                        <div class="container-text"> 
+                            <p>Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div>
-                <p class="advertencia"> Solo letras minúsculas y sin acentos</p>
+            </section>
+            <p class="advertencia"> Solo letras minúsculas y sin acentos</p>
+            <section class="botones">
                 <input type="submit" value="Encriptar" class="boton-encriptar">
                 <input type="submit" value="Desencriptar" class="boton-desencriptar">
-            </div>
+                <input type="submit" value="Copiar" class="boton-copiar">
+            </section>
         </main>
 
         <footer>
-
+            <div>
+                <a href="https://github.com/Nicolas359"><img src="images/github-icon.png" alt="Ícono de github"></a>
+            </div>
         </footer>
     </body>
 </html>
